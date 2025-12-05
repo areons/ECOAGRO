@@ -2,12 +2,12 @@ import requests
 from twilio.rest import Client
 
 #OWM API parameters
-api_key = "cfe93827fdb441ee3b08886450e207d6"
+api_key = "API KEY HERE"
 OWM_Endpoint = 'https://api.openweathermap.org/data/2.5/forecast'
 
 #Twilio API parameters
-account_sid = 'AC3d2bfe5bec186da3891f19e8cb07e88f'
-auth_token = '0fd76838276d997cf8fb49e62d75a1d6'
+account_sid = 'SID AQUI'
+auth_token = 'TOKEN AQUI'
 
 parameters = {
     'lat': -23.534625,   #Sao Paulo
@@ -36,7 +36,8 @@ if will_rain:
         .create(
         body='Vai chover, ao sair, leve um guarda-chuvas!',
         from_= '+14345954165',
-        to= '+5511981704765'
+        to= '+5511NUMEROAQUI'
     )
     print(message.status)
+
 
